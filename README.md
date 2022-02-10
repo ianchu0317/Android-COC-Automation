@@ -16,7 +16,10 @@ The message is costomizable in './spam-message.txt'. (THE SPAM CONTENT MUST HAVE
 
 ---------------
 ### Usage Example
-https://user-images.githubusercontent.com/71509578/153328648-dd1d1ff9-14e3-48ff-95cd-5709b790028d.mp4
+
+
+https://user-images.githubusercontent.com/71509578/153329164-505f7403-f680-40b8-bd17-c88a049dbcdc.mp4
+
 
 
 https://user-images.githubusercontent.com/71509578/153328739-75df1434-2fe9-4115-8a71-07aa7cb73c74.mp4
