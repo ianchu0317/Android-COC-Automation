@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from ppadb.client import Client as AdbClient
 from time import sleep
 import os
