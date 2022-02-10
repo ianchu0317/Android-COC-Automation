@@ -11,7 +11,7 @@ Alternatively you can use ```./install.sh``` command to install the requeriments
 > - chmod +x install.sh && sudo ./install <br>
 > - python3 app.py
 
-The message is customizable in ```'./spam-message.txt'```. (THE SPAM CONTENT MUST HAVE ONE LINE ONLY, OTHERWISE IT WON'T WORK).
+The message to spam is customizable in ```./spam-message.txt```. (THE SPAM CONTENT MUST HAVE ONE LINE ONLY, OTHERWISE IT WON'T WORK).
 
 
 ---------------
