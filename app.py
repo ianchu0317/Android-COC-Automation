@@ -46,9 +46,15 @@ def LeaveClan(device, message):
 	sleep(0.5)
 	device.input_tap(CHAT_BUTTON[0], CHAT_BUTTON[1])
 	sleep(1)
-	#device.input_text("Únanse al clan 'Dark Spirits', solo miembros activos y para pasarla bien. Código #2YU2VC8VP   XD, buena suerte")
-	os.system('adb shell input text "{}"'.format(message))
-	sleep(1)
+
+	# Text the spam message word by word
+	message = message.split(" ")
+	print(message)
+	for word in message:
+		device.input_text(word)
+		device.input_keyevent(62)
+
+	sleep(4)
 	device.input_tap(ENTER_BUTTON[0], ENTER_BUTTON[1])
 
 
