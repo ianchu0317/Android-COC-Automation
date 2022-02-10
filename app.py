@@ -27,18 +27,26 @@ def KillAdbServer(port:int):
 	os.system('adb -P {} kill-server'.format(port))
 
 # Function for leaving clan
-def LeaveClan(device):
+def LeaveClan(device, message):
 	device.input_tap(CHAT_PANEL[0], CHAT_PANEL[1]) # x, y variables; open chat panel
+	sleep(0.5)
 	device.input_tap(CLAN_PANEL[0], CLAN_PANEL[1]) # open menu panel
+	sleep(0.5)
 	device.input_tap(FIND_CLAN_PANEL[0], FIND_CLAN_PANEL[1])
+	sleep(0.5)
 	device.input_tap(FIRST_SUGESTED_CLAN[0], FIRST_SUGESTED_CLAN[1])
+	sleep(0.5)
 	device.input_tap(JOIN_CLAN_BUTTON[0], JOIN_CLAN_BUTTON[1])
+	sleep(0.5)
 	device.input_tap(CONFIRM_LEAVE_BUTTON[0], CONFIRM_LEAVE_BUTTON[1]) # Leave Clan
+	sleep(0.5)
 	device.input_tap(ACCEPT_CONDITIONS[0], ACCEPT_CONDITIONS[1])
+	sleep(0.5)
 	device.input_tap(CHAT_BUTTON[0], CHAT_BUTTON[1])
 	sleep(1)
-	device.input_text(message)
-	sleep(0.5)
+	#device.input_text("Únanse al clan 'Dark Spirits', solo miembros activos y para pasarla bien. Código #2YU2VC8VP   XD, buena suerte")
+	os.system('adb shell input text "{}"'.format(message))
+	sleep(1)
 	device.input_tap(ENTER_BUTTON[0], ENTER_BUTTON[1])
 
 
@@ -50,10 +58,10 @@ def main():
 
 		with open('spam-message.txt', 'r') as file:
 			message = file.read()
-
+		print(message)
 		for x in range(10):
 			LeaveClan(device, message)
-			sleep(1)
+			sleep(2)
 
 	except KeyboardInterrupt:
 		#KillAdbService(5037)
