@@ -12,3 +12,13 @@ Alternatively you can use ./install.sh command to install the requeriments.
 > - python3 app.py
 
 The message is costomizable in './spam-message.txt'. (THE SPAM CONTENT MUST HAVE ONE LINE ONLY, OTHERWISE IT WON'T WORK).
+
+
+---------------
+### Usage Example
+https://user-images.githubusercontent.com/71509578/153328648-dd1d1ff9-14e3-48ff-95cd-5709b790028d.mp4
+Usage from linux device
+
+
+https://user-images.githubusercontent.com/71509578/153328739-75df1434-2fe9-4115-8a71-07aa7cb73c74.mp4
+Usage from android device
